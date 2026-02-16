@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HRM personnel management system, recruiting | TalentSearch</title>
+  <meta name="description"
+    content="Simplify your recruitment process and boost performance with TalentSearch's all-in-one platform, combining ATS, CRM, Outbound Recruitment, Data, and Sourcing tools. Say goodbye to juggling separate tools!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/icon.png" type="image/png">
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.webp" alt="TalentSearch Logo">
+      </a>
+      <nav class="header__nav">
+        <a href="#" class="header__nav-link active">Home</a>
+        <div class="header__dropdown">
+          <a href="#" class="header__nav-link header__nav-link--dropdown">Products
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <div class="header__dropdown-menu">
+            <a href="#sourcing" class="header__dropdown-item">Sourcing</a>
+            <a href="#extension" class="header__dropdown-item">Extension</a>
+            <a href="#ats" class="header__dropdown-item">Candidate's Management</a>
+            <a href="#reports" class="header__dropdown-item">Reports</a>
+          </div>
+        </div>
+        <a href="#pricing" class="header__nav-link">Pricing</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#" class="btn btn--outline">LOGIN</a>
+        <a href="#" class="btn btn--primary">GET STARTED</a>
+        <div class="header__lang">
+          <span class="header__lang-flag">🇺🇸</span>
+          <span>EN</span>
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none">
+            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+      <button class="header__burger" id="burger-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE MENU ========== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <nav class="mobile-menu__nav">
+      <a href="#" class="mobile-menu__link">Home</a>
+      <a href="#sourcing" class="mobile-menu__link">Sourcing</a>
+      <a href="#extension" class="mobile-menu__link">Extension</a>
+      <a href="#ats" class="mobile-menu__link">Candidate's Management</a>
+      <a href="#reports" class="mobile-menu__link">Reports</a>
+      <a href="#pricing" class="mobile-menu__link">Pricing</a>
+      <div class="mobile-menu__actions">
+        <a href="#" class="btn btn--outline">LOGIN</a>
+        <a href="#" class="btn btn--primary">GET STARTED</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-left"></div>
+    <div class="hero__bg-right"></div>
+    <div class="container">
+      <h1 class="hero__title" data-animate="fade-up">Find, connect, and hire the best-fit candidates</h1>
+      <p class="hero__subtitle" data-animate="fade-up" data-delay="100">Simplify your recruitment process and boost
+        performance with TalentSearch's all-in-one platform, combining ATS, CRM, Outbound Recruitment, Data, and
+        Sourcing tools. Say goodbye to juggling separate tools!</p>
+      <a href="#" class="btn btn--primary btn--lg hero__cta" data-animate="fade-up" data-delay="200">TRY IT FREE</a>
+      <div class="hero__features" data-animate="fade-up" data-delay="300">
+        <div class="hero__feature-item">
+          <span class="hero__feature-icon">🔍</span>
+          <span>Find candidates</span>
+        </div>
+        <div class="hero__feature-item">
+          <span class="hero__feature-icon">🎯</span>
+          <span>Add to system</span>
+        </div>
+        <div class="hero__feature-item">
+          <span class="hero__feature-icon">👥</span>
+          <span>Manage in team</span>
+        </div>
+        <div class="hero__feature-item">
+          <span class="hero__feature-icon">✈️</span>
+          <span>Outreach</span>
+        </div>
+        <div class="hero__feature-item">
+          <span class="hero__feature-icon">📊</span>
+          <span>Reports</span>
+        </div>
+        <div class="hero__feature-item">
+          <span class="hero__feature-icon">🔗</span>
+          <span>Integrations</span>
+        </div>
+      </div>
+      <div class="hero__image" data-animate="fade-up" data-delay="400">
+        <img src="images/hero-screenshot.webp" alt="TalentSearch Platform Screenshot">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS ========== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">Our Clients</h2>
+      <div class="clients__carousel" data-animate="fade-up" data-delay="100">
+        <button class="clients__arrow clients__arrow--prev" id="clients-prev">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="clients__track-wrapper">
+          <div class="clients__track" id="clients-track">
+            <div class="clients__logo"><img src="images/client-logo-1.webp" alt="PrivatBank"></div>
+            <div class="clients__logo"><img src="images/extension-illustration.webp" alt="DigiCode"></div>
+            <div class="clients__logo"><img src="images/sourcing-illustration.webp" alt="Kozak Group"></div>
+            <div class="clients__logo"><img src="images/ats-illustration.webp" alt="ROOSH"></div>
+            <div class="clients__logo"><img src="images/reports-illustration.webp" alt="Hillel IT School"></div>
+            <div class="clients__logo"><img src="images/extension-browser.webp" alt="BigDrop"></div>
+            <div class="clients__logo"><img src="images/report-chart.webp" alt="BrightGrove"></div>
+            <div class="clients__logo"><img src="images/search-bar.webp" alt="Pingle"></div>
+            <div class="clients__logo"><img src="images/candidate-list.webp" alt="ARTEL"></div>
+            <div class="clients__logo"><img src="images/candidate-add.webp" alt="Bini"></div>
+            <div class="clients__logo"><img src="images/candidate-card.webp" alt="SimilarDev"></div>
+            <div class="clients__logo"><img src="images/client-logo-2.webp" alt="DigiCode"></div>
+          </div>
+        </div>
+        <button class="clients__arrow clients__arrow--next" id="clients-next">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE: Sourcing ========== -->
+  <section class="feature" id="sourcing">
+    <div class="container">
+      <div class="feature__grid" data-animate="fade-up">
+        <div class="feature__media feature__media--left">
+          <div class="feature__sourcing-img">
+            <img src="images/sourcing-composite.webp" alt="Sourcing interface with search and candidate cards">
+          </div>
+        </div>
+        <div class="feature__content">
+          <div class="feature__badge">
+            <span class="feature__badge-icon">🔍</span>
+            <span>Candidates Sourcing</span>
+          </div>
+          <h2 class="feature__title">Find Top Talent Beyond Job Boards</h2>
+          <p class="feature__text">Your one-stop-shop for sourcing top talent. Find and contact candidates instantly
+            from our extensive database, your personal database, and Google search all on one page. Plus, search
+            millions of extra profiles with our X-ray generator. Say goodbye to juggling multiple platforms and
+            streamline your sourcing process with TalentSearch.</p>
+          <div class="feature__buttons">
+            <a href="#" class="btn btn--primary">START NOW</a>
+            <a href="#" class="btn btn--outline">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE: Extension ========== -->
+  <section class="feature feature--reverse" id="extension">
+    <div class="container">
+      <div class="feature__grid" data-animate="fade-up">
+        <div class="feature__content">
+          <div class="feature__badge">
+            <span class="feature__badge-icon">🎯</span>
+            <span>Chrome Extension</span>
+          </div>
+          <h2 class="feature__title">Enhance Your Recruitment Efficiency with TalentSearch Extension</h2>
+          <p class="feature__text">Recruit without leaving your social page! Our Extension lets you seamlessly work with
+            your ATS, find contacts, and view candidate workflows across 20+ job websites, including LinkedIn,
+            StackOverflow, etc. Collaborate with colleagues, sync your progress</p>
+          <div class="feature__buttons">
+            <a href="#" class="btn btn--primary">INSTALL FOR FREE</a>
+            <a href="#" class="btn btn--outline">LEARN MORE</a>
+            <a href="#" class="btn btn--text">SEE WEBSITES</a>
+          </div>
+        </div>
+        <div class="feature__media feature__media--right">
+          <div class="feature__browser-mockup">
+            <img src="images/extension-browser.webp" alt="LinkedIn with Extension">
+          </div>
+          <div class="feature__floating-card feature__floating-card--popup">
+            <img src="images/extension-popup.webp" alt="Extension popup">
+          </div>
+          <div class="feature__floating-card feature__floating-card--ats-panel">
+            <img src="images/extension-ats.webp" alt="ATS panel">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE: ATS ========== -->
+  <section class="feature" id="ats">
+    <div class="container">
+      <div class="feature__grid" data-animate="fade-up">
+        <div class="feature__media feature__media--left">
+          <div class="feature__pipeline-img">
+            <img src="images/pipeline-illustration.webp" alt="Pipeline board">
+          </div>
+          <div class="feature__floating-card feature__floating-card--ats-board">
+            <img src="images/ats-board.webp" alt="ATS Board">
+          </div>
+        </div>
+        <div class="feature__content">
+          <div class="feature__badges-row">
+            <div class="feature__badge">
+              <span class="feature__badge-icon">👥</span>
+              <span>Applicant Tracking System</span>
+            </div>
+            <div class="feature__badge">
+              <span class="feature__badge-icon">✈️</span>
+              <span>Engaging system</span>
+            </div>
+          </div>
+          <h2 class="feature__title">Streamline Your Talent Pipeline</h2>
+          <p class="feature__text">Save the best talent directly from our Plugin or Search Console and manage their
+            progress through the hiring process. View all candidates across every stage and job in one place, leave
+            comments, import CVs, and more. Plus, TalentSearch's user-friendly platform is perfect for teamwork. It's
+            the foundation for everything you need in a modern ATS.</p>
+          <div class="feature__buttons">
+            <a href="#" class="btn btn--primary">START NOW</a>
+            <a href="#" class="btn btn--outline">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURE: Reports ========== -->
+  <section class="feature feature--reverse" id="reports">
+    <div class="container">
+      <div class="feature__grid" data-animate="fade-up">
+        <div class="feature__content">
+          <div class="feature__badge">
+            <span class="feature__badge-icon">📊</span>
+            <span>Reports</span>
+          </div>
+          <h2 class="feature__title">Get detailed reports on your recruitment process from start to finish</h2>
+          <p class="feature__text">Our system tracks candidate behavior from sourcing to ATS, providing insights into
+            your vacancy funnel, team workflow, and more. Plus, easily integrate with Google Data Studio for additional
+            reporting capabilities.</p>
+          <div class="feature__buttons">
+            <a href="#" class="btn btn--primary">START NOW</a>
+            <a href="#" class="btn btn--outline">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="feature__media feature__media--right">
+          <div class="feature__reports-img">
+            <img src="images/reports-dashboard.webp" alt="Reports dashboard">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">Our clients love using TalentSearch</h2>
+      <p class="section-subtitle" data-animate="fade-up" data-delay="100">TalentSearch streamlines your end-to-end
+        recruitment process with record-breaking performance. Ideal for all types of companies and recruitment needs.
+      </p>
+      <div class="testimonials__carousel" data-animate="fade-up" data-delay="200">
+        <button class="testimonials__arrow testimonials__arrow--prev" id="test-prev">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="testimonials__track-wrapper">
+          <div class="testimonials__track" id="testimonials-track">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__avatar">
+                <img src="images/testimonial-marina.webp" alt="Marina Portna">
+              </div>
+              <p class="testimonial-card__text">Talentsearch ATS has improved our recruitment process for over 2 years.
+                The Extension integrates with Li, Djinni, Rabota, Work, etc. for easy candidate management. The
+                user-friendly interface lets us create job postings and move candidates through stages effortlessly.</p>
+              <h4 class="testimonial-card__name">Marina Portna</h4>
+              <span class="testimonial-card__role">CEO at JobAdvice Agency</span>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__avatar">
+                <img src="images/testimonial-nadiia.webp" alt="Nadiia Kovanzhi">
+              </div>
+              <p class="testimonial-card__text">In our search for a system to assist us with candidate screening and
+                evaluation during the prescreen stage, Talentsearch emerged as the ideal choice. With a vast candidate
+                database and a chrome extension that works seamlessly across multiple job sites, it perfectly met our
+                requirements.</p>
+              <h4 class="testimonial-card__name">Nadiia Kovanzhi</h4>
+              <span class="testimonial-card__role">Recruitment Lead, Digicode</span>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__avatar">
+                <img src="images/testimonial-kyrylo.webp" alt="Kyrylo Polishchuk">
+              </div>
+              <p class="testimonial-card__text">TalentSearch streamlined our recruitment process and made it easier to
+                hire new teachers. It also helped with our student training courses. The support team is prompt and
+                professional and resolved many issues. It has all the necessary features for recruiters.</p>
+              <h4 class="testimonial-card__name">Kyrylo Polishchuk</h4>
+              <span class="testimonial-card__role">Growth Manager, Hillel IT school</span>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__avatar">
+                <img src="images/testimonial-7.webp" alt="Yuliia Drobot">
+              </div>
+              <p class="testimonial-card__text">TalentSearch has completely transformed our recruitment process. With
+                its intuitive platform, Applicant Tracking System, chrome extension and search console, we're now able
+                to quickly source, evaluate and manage top talent from a variety of sources.</p>
+              <h4 class="testimonial-card__name">Yuliia Drobot</h4>
+              <span class="testimonial-card__role">Talent Acquisition Lead at Roosh</span>
+            </div>
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__avatar">
+                <img src="images/testimonial-3.webp" alt="Oksana Stepanova">
+              </div>
+              <p class="testimonial-card__text">I'd like to thank TalentSearch for the quick implementation of their
+                recruitment automation platform. Since June 2019, their team has been responsive to our requests. The
+                intuitive interface made it easy for our team to use the search console and ATS.</p>
+              <h4 class="testimonial-card__name">Oksana Stepanova</h4>
+              <span class="testimonial-card__role">Department head, Fozzy Group recruitment</span>
+            </div>
+            <!-- Testimonial 6 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__avatar">
+                <img src="images/testimonial-8.webp" alt="Olga Osenina">
+              </div>
+              <p class="testimonial-card__text">TalentSearch has been a game-changer for our enterprise since we began
+                using it in 2020. The level of professionalism displayed by the company was top-notch as they seamlessly
+                integrated their system for all our departments.</p>
+              <h4 class="testimonial-card__name">Olga Osenina</h4>
+              <span class="testimonial-card__role">Head of recruitment, Kernel</span>
+            </div>
+          </div>
+        </div>
+        <button class="testimonials__arrow testimonials__arrow--next" id="test-next">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <h2 class="section-title section-title--light" data-animate="fade-up">Numbers to prove</h2>
+      <div class="stats__grid" data-animate="fade-up" data-delay="100">
+        <div class="stats__item">
+          <div class="stats__number" data-count="90">0</div>
+          <div class="stats__suffix">%</div>
+          <h3 class="stats__label">Customers Satisfaction</h3>
+          <p class="stats__desc">We Consistently Receive High Ratings On Customer Satisfaction Surveys.</p>
+        </div>
+        <div class="stats__item">
+          <div class="stats__text-block">
+            <h3 class="stats__headline">Our customers love us!</h3>
+            <p class="stats__subtext">Automating tasks results in a faster time to hire.</p>
+            <p class="stats__subtext">Automated recruitment software is more than just a time-saver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2 class="cta__title" data-animate="fade-up">Transform your hiring process</h2>
+      <p class="cta__text" data-animate="fade-up" data-delay="100">Join All in One Recruiting Platform that streamlines
+        your recruitment life cycle. Become a hiring powerhouse today.</p>
+      <a href="#" class="btn btn--white btn--lg" data-animate="fade-up" data-delay="200">SIGN UP FOR FREE</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-text"><strong>Talent</strong><span
+                class="footer__logo-accent">Search</span></span>
+          </div>
+          <div class="footer__contact">
+            <p><strong>Contact us:</strong></p>
+            <p><a href="mailto:sales@talentsearch.pro">sales@talentsearch.pro</a></p>
+            <p><a href="tel:+380933097883">+38 093 309 78 83</a></p>
+          </div>
+        </div>
+        <div class="footer__links">
+          <a href="#sourcing">Sourcing</a>
+          <a href="#extension">Extension</a>
+          <a href="#ats">ATS</a>
+          <a href="#reports">Reports</a>
+        </div>
+        <div class="footer__links">
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div class="footer__links">
+          <a href="#">Sign Up</a>
+          <a href="#">Sign in</a>
+        </div>
+        <div class="footer__social">
+          <h4>Follow Us</h4>
+          <div class="footer__social-icons">
+            <a href="https://www.facebook.com/TalentSearch.pro" target="_blank" class="footer__social-icon"
+              aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/talentsearch-pro" target="_blank" class="footer__social-icon"
+              aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© Created by</span>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy & GDPR</a>
+          <a href="#">Terms of service</a>
+        </div>
+        <span>All rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
